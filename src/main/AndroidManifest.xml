@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplicationfinal">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="LearnOInvest"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplicationfinal">
+        <activity android:name=".sellactivity"
+            android:label="Transaction"
+            android:parentActivityName=".homepage"
+            ></activity>
+        <activity
+            android:name=".balancededuct"
+            android:label="Transaction"
+            android:parentActivityName=".homepage" />
+        <activity
+            android:name=".buyStock"
+            android:label="Buy Stock"
+            android:parentActivityName=".Allstock" />
+        <activity
+            android:name=".portfolio"
+            android:label="Portfolio"
+            android:parentActivityName=".homepage" />
+        <activity
+            android:name=".todaytips"
+            android:label="Tip&apos;s for today"
+            android:parentActivityName=".homepage" />
+        <activity
+            android:name=".news"
+            android:label="News Feed"
+            android:parentActivityName=".homepage" />
+        <activity
+            android:name=".homepage"
+            android:label="Home"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.MyApplicationfinal.NoActionBar" />
+        <activity
+            android:name=".Allstock"
+            android:label="Trade"
+            android:parentActivityName=".homepage" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
